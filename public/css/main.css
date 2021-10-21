@@ -1,0 +1,376 @@
+body{
+	min-width: 320px; /*360px*/
+	font-size: 16px;
+	background-color: #ccf49e!important;
+	margin: 0 auto;
+}
+/*
+	background-image: url("../images/codww2.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: Impact;
+	color: rgb(173,153,64);
+	background-size: cover;
+*/
+#main {
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 122px; /* 70px; */
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: auto;
+}
+
+#top {
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	text-align: center;
+}
+nav {
+	top: 70px;
+	max-height: 52px!important;
+}
+
+nav img {
+	margin-top: 2px;
+}
+
+#main1 {
+  position: absolute;
+  top: 0; /* 52px; */
+  bottom: 40px;
+  width: 100%;
+  padding-top: 5px;
+  overflow: auto;
+}
+
+#bottommain {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+  width: 100%;
+  height: -40px;
+  overflow: hidden;
+}
+
+div.col-sm-4>a>img {
+	margin: 0 auto;
+}
+
+div.col-sm-8>a>img {
+	margin: 0 auto;
+}
+
+panel>.table {
+	min-width: 640px;
+}
+figure {
+    width: max-content;
+    border: black;
+    border-style: solid;
+    background: white;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+/*
+ * Footer
+ */
+.blog-footer {
+  padding: 10px 0;
+  /* 40 px 0;*/
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+.img-responsive {
+	display: inline-block;
+}
+
+.groen {
+	color: green;
+}
+
+.rood {
+	color: red;
+}
+
+.ml9 {
+  position: relative;
+  margin-top: 0; /* toegevoegd */
+  padding-top: 0.3125rem;
+  font-weight: 200;
+  font-size: 5rem; /* 4em; 2.5rem; */
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 1rem; /* 0.2em; */
+  padding-right: 0.05rem;
+  padding-bottom: 0.1rem;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1rem;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px;  /* The height is 400 pixels */
+  width: 100%;  /* The width is the width of the web page */
+}
+
+/**** MEDIA QUERIES ****/
+
+/* Zeer kleine apparaten, smartphones */
+
+@media screen and (max-width: 640px) {
+    figure {
+        padding: 0px;
+    }
+    figure img{
+        width: 90vw;
+        height: auto;
+    }
+    #content{
+        padding:0;
+    }
+    #footer div{
+        width: initial;
+    }
+	panel>.table {
+		min-width: 640px;
+	}
+
+}
+
+
+/* Telefoon in portret */
+@media screen and (max-width: 640px) and (orientation: portrait) {
+	/* -*-*-*- */
+	panel>.table {
+		min-width: 640px;
+	}
+	/* Nav links */
+
+	.nav-link {
+	  position: relative;
+	  padding: 1rem;
+	  font-weight: 500;
+	  color: #ccf49e;
+	}
+
+	.nav-link:hover,
+	.nav-link:focus {
+	  color: #fff;
+	  background-color: #ccf49e; /*transparent*/
+	}
+
+	/* Active state gets a caret at the bottom */
+
+	.nav-link.active {
+	  color: #fff;
+	}
+
+	.nav ul{ /* was #nav */ 
+		margin: 0;
+		list-style-type: none;
+		-webkit-padding-start: 0;
+	}
+
+	.nav {
+		padding: 0;
+		margin: 0;
+	}
+
+	.nav>li {
+	    display: inline-block;
+		background: #333;
+		/*min-width: 25rem;*/
+		margin-left: 0;/*-1px;*/
+		margin-right: 0;/*-1px;*/
+	}
+
+	.nav>li>a {
+		padding-top: 0;/*20px;*/
+		padding-bottom: 0;/* 20px;*/
+	}
+
+	.nav li:not(:nth-of-type(5)):hover {
+		background: #ccf49e;
+		color: green;
+	}
+
+	.nav>li:hover ul{
+		display: block;
+	}
+
+	.nav li>ul{
+		display: none; 
+		position: absolute;
+	}
+	/* -*-*-*- */
+
+	.ml9 {
+	  font-weight: 400;
+	  font-size: 1.9rem;
+	}
+
+}
+
+/* Telefoon in landscape of alles groter dan telefoons */
+@media screen and (max-width: 640px) and (orientation: landscape), screen and (min-width: 641px) {
+	panel>.table {
+		min-width: 640px;
+	}
+	/* Nav links */
+
+	.nav-link {
+	  position: relative;
+	  padding: 1rem;
+	  font-weight: 500;
+	  color: #ccf49e;
+	}
+
+	.nav-link:hover,
+	.nav-link:focus {
+	  color: #fff;
+	  background-color: #ccf49e; /*transparent*/
+	}
+
+	/* Active state gets a caret at the bottom */
+
+	.nav-link.active {
+	  color: #fff;
+	}
+
+	.nav ul{ /* was #nav */ 
+		margin: 0;
+		list-style-type: none;
+		-webkit-padding-start: 0;
+	}
+
+	.nav {
+		padding: 0;
+		margin: 0;
+	}
+
+	.nav>li {
+	    display: inline-block;
+		background: #333;
+		/*min-width: 25rem;*/
+		margin-left: 0;/*-1px;*/
+		margin-right: 0;/*-1px;*/
+	}
+
+	.nav>li>a {
+		padding-top: 0;/*20px;*/
+		padding-bottom: 0;/* 20px;*/
+	}
+
+	.nav li:not(:nth-of-type(5)):hover {
+		background: #ccf49e;
+		color: green;
+	}
+
+	.nav>li:hover ul{
+		display: block;
+	}
+
+	.nav li>ul{
+		display: none; 
+		position: absolute;
+	}
+
+	.ml9 {
+	  font-weight: 400;
+	  font-size: 3.5rem;
+	}
+
+}
+
+
+/* Alles groter dan telefoon */
+@media screen and (min-width: 641px){
+    .nav>li>ul{
+		min-width: 25rem;
+	}
+}
+
+/* Kleine apparaten, tablets */
+@media screen and (min-width: 641px) and (max-width: 960px) { /*941px*/ /*875px*/
+	.row {
+		margin-top: 40px;
+		padding: 0 10px;
+	}
+
+	.panel-heading span {
+		margin-top: -20px;
+		font-size: 15px;
+	}
+
+	.table > thead > tr > th{
+		border-right: 1px solid #ddd;
+		border-bottom: 0;
+	}
+
+	.table > tbody > tr > td{
+		border-right: 1px solid #ddd;
+	}
+
+	.table > thead > tr > th:last-of-type {
+		border-right: 0;
+	}
+
+	.table > tbody > tr > td:last-of-type {
+		border-right: 0;
+	}
+
+	.panel-body {
+		padding: 0;
+	}
+
+	.panel-body > .table {
+		margin-bottom: 0;
+	}
+
+	.ml9 {
+	  font-weight: 400;
+	  font-size: 4rem;
+	}
+
+	 
+}
+
+/* Gemiddelde apparaten, laptops */
+@media screen and (min-width: 961px) and (max-width: 1200px) { /*876px*/
+}
+
+/* Grote apparaten, desktops */
+@media screen and (min-width: 1201px) {
+}
+
+@media print {
+	body {
+		font-family: Helvetica, sans-serif;
+	}
+}

@@ -1,0 +1,378 @@
+body {
+	margin: 0 auto;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1rem; /*16px;*/
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	text-align: left;
+	min-width: 320px; /*360px*/
+	background-color: #ccf49e!important;
+}
+/*
+	background-image: url("../images/codww2.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: Impact;
+	color: rgb(173,153,64);
+	background-size: cover;
+*/
+
+#top {
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+}
+
+#top h1 {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 3.6rem; /* 60px; 3vw; */
+}
+
+#main {
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 122px; /* 70px; */
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: auto;
+}
+nav {
+	top: 70px;
+	/*max-height: 52px!important;*/
+	height: 58px;
+}
+
+/*
+nav img {
+	margin-top: 2px;
+}*/
+
+.navbar {
+	padding: 0 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-expand-xl .navbar-nav .nav-link {
+	padding: 1rem 2rem;
+}
+
+.nav-link {
+    display: block;
+	text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: #ccf49e;
+  color: green !important;
+}
+
+/* OK, deze twee toegevoegd */
+#sidebarCollapse {
+	width: 40px;
+    height: 40px;
+    background: #f5f5f5;
+}
+
+#sidebarCollapse span {
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+    display: block;
+    background: #555;
+    transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+}
+
+/* OK, de volgende drie ook toegevoegd */
+#sidebarCollapse span:first-of-type {
+    /* rotate first one */
+    transform: rotate(45deg) translate(2px, 2px);
+}
+
+#sidebarCollapse span:nth-of-type(2) {
+    /* second one is not visible */
+    opacity: 0;
+}
+
+#sidebarCollapse span:last-of-type {
+    /* rotate third one */
+    transform: rotate(-45deg) translate(1px, -1px);
+}
+
+/* OK, de volgende ook nog toegevoegd */
+#sidebarCollapse.active span {
+    /* no rotation */
+    transform: none;
+    /* all bars are visible */
+    opacity: 1;
+    margin: 5px auto;
+}
+
+/* OK, de volgende drie ook toegevoegd */
+.wrapper {
+    display: flex;
+    align-items: stretch;
+    perspective: 1500px; 
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+    transform-origin: center left; /* Set the transformed position of sidebar to center left side. */
+}
+
+#sidebar.active {
+    margin-left: -250px;
+    transform: rotateY(100deg); /* Rotate sidebar vertically by 100 degrees. */
+}
+/*-*-*-*-*-*/
+
+.bg-dark {
+	background-color: green !important;
+}
+
+#main1 {
+  position: absolute;
+  top: 0; /* 52px; */
+  bottom: 40px;
+  width: 100%;
+  padding-top: 5px;
+  overflow: auto;
+}
+
+#bottommain {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+  width: 100%;
+  height: -40px;
+  overflow: hidden;
+}
+
+/*
+div.col-sm-4>a>img {
+	margin: 0 auto;
+}
+
+div.col-sm-8>a>img {
+	margin: 0 auto;
+}
+
+panel>.table {
+	min-width: 640px;
+}
+figure {
+    width: max-content;
+    border: black;
+    border-style: solid;
+    background: white;
+    margin: 0 auto;
+    padding: 5px;
+}
+*/
+
+/*
+ * Footer
+ */
+.blog-footer {
+  padding: 10px 0;
+  /* 40 px 0;*/
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+
+
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+/*
+.img-responsive {
+	display: inline-block;
+}
+*/
+.groen {
+	color: green;
+}
+
+.rood {
+	color: red;
+}
+
+.ml9 {
+  /*position: relative;*/
+  /*margin-top: 0; /* toegevoegd */
+  /*padding-top: 0.3125rem;*/
+  font-weight: 400;
+  font-size: 2.5rem; /* 4em; 2.5rem; */
+    margin: 0;
+    position: absolute;
+	top: 20px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    /*top: 50%;*/
+    /*-ms-transform: translateY(-50%);*/
+    transform: translateY(-50%);
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 1rem; /* 0.2em; */
+  padding-right: 0.05rem;
+  padding-bottom: 0.1rem;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+	margin: 0 auto;
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1rem;
+  text-align: center;
+}
+
+.btn-link, .btn-link:hover {
+	color: green;
+}
+
+table.scroll {
+    /*width: 716px;*/ /* 140px * 5 column + 16px scrollbar width */
+    border-spacing: 0;
+    /*border: 2px solid black;*/
+}
+
+table.scroll tbody,
+table.scroll thead tr {
+	display: block;
+}
+
+table.scroll tbody {
+    height: 16rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+table.scroll thead th,
+table.scroll tbody td {
+    width: 8rem;
+}
+
+/*-*-*-*-*-*-*/
+@media (max-width: 768px) {
+}
+/*-*-*-*-*-*-*/
+
+@media screen and (max-width: 767px) {
+	#top h1 {
+		font-size: 30px;
+	}
+	
+	.navbar-nav { /*hp*/
+		background-color: #91d091;
+		border: 1px solid green;
+	}
+
+	.nav-link {
+		color: green;
+	}
+	
+	#wow img {
+		margin-left: 2rem;
+	}
+	
+	.ml9 {
+	  font-weight: 200;
+	  font-size: 1.4rem;
+	}
+
+	/*-*-*-*-*-*-*/
+    /* Reversing the behavior of the sidebar: 
+       it'll be rotated vertically and off canvas by default, 
+       collapsing in on toggle button click with removal of 
+       the vertical rotation.   */
+    #sidebar {
+        margin-left: -250px;
+        transform: rotateY(100deg);
+    }
+
+    #sidebar.active {
+        margin-left: 0;
+        transform: none;
+    }
+
+    /* Reversing the behavior of the bars: 
+       Removing the rotation from the first,
+       last bars and reappear the second bar on default state, 
+       and giving them a vertical margin */
+    #sidebarCollapse span:first-of-type,
+    #sidebarCollapse span:nth-of-type(2),
+    #sidebarCollapse span:last-of-type {
+        transform: none;
+        opacity: 1;
+        margin: 5px auto;
+    }
+
+    /* Removing the vertical margin and make the first and last bars rotate again when the sidebar is open, hiding the second bar */
+    #sidebarCollapse.active span {
+        margin: 0 auto;
+    }
+
+    #sidebarCollapse.active span:first-of-type {
+        transform: rotate(45deg) translate(2px, 2px);
+    }
+
+    #sidebarCollapse.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    #sidebarCollapse.active span:last-of-type {
+        transform: rotate(-45deg) translate(1px, -1px);
+    }
+	/*-*-*-*-*-*-*/
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	#top h1 {
+		font-size: 45px;
+	}
+	
+	.navbar-nav { /*hp*/
+		background-color: #91d091;
+		border: 1px solid green;
+	}
+
+	.nav-link {
+		color: green;
+	}
+	
+	#wow img {
+		margin-left: 2rem;
+	}
+	
+	.ml9 {
+	  font-weight: 400;
+	  font-size: 2rem;
+	}
+
+}
