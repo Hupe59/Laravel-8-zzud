@@ -27,7 +27,7 @@
 								</tr>
 								<tr>
 									<td><p><strong>Bank:</strong></p></td>
-									<td><p class="groen"><strong>NL18RABO0154.3052.94&nbsp;(Rabobank)<br />t.n.v.&nbsp;penningmeester&nbsp;Z.E.V.</strong></p></td>
+									<td><p class="groen"><strong>NL18RABO0154.3052.94<br />(Rabobank)<br />t.n.v.&nbsp;penningmeester&nbsp;Z.E.V.</strong></p></td>
 								</tr>
 								<tr>
 									<td><p><strong>KvK-nummer:</strong></p></td>
@@ -86,8 +86,8 @@
 					<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionContact">
 						<div class="accordion-body">
 							<p>Enkele nuttige 
-							<a href="https://www.google.com/maps/d/edit?mid=1WAU6D6WG7954ZEXWzrKQj6KQKcvdMIZv&usp=sharing" title="Enkele nuttige locaties van Z.E.V." target="_blank"><span class="groen">locaties</span></a> van 
-							<span class="groen"><strong>Zanggroep Evergreen Vierlingsbeek</strong></span></p>
+							<a href="https://www.google.com/maps/d/edit?mid=1WAU6D6WG7954ZEXWzrKQj6KQKcvdMIZv&usp=sharing" title="Enkele nuttige locaties m.b.t. Z.E.V." target="_blank"><span class="groen">locaties</span></a> met 
+							betrekking tot <span class="groen"><strong>Zanggroep Evergreen Vierlingsbeek</strong></span></p>
 						</div>
 					</div>
 				</div>
